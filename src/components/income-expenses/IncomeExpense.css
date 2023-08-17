@@ -1,0 +1,28 @@
+.incomeExpense {
+  background-color: beige;
+  box-shadow: var(--box-shadow);
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 0;
+}
+.incomeExpense div {
+  flex: 1;
+  text-align: center;
+}
+.incomeExpense div:first-child {
+  border-right: 1px solid black;
+}
+
+.money-plus {
+  color: lightblue;
+  font-size: 16px;
+}
+.money-minus {
+  color: lightcoral;
+  font-size: 16px;
+}
+.H4 {
+  margin: 0;
+  text-transform: uppercase;
+}

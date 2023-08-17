@@ -1,0 +1,78 @@
+/* Transaction list and Transaction */
+
+.list {
+  list-style-type: none;
+  padding: 0;
+  margin-bottom: 40px;
+}
+.list li {
+  background-color: beige;
+  box-shadow: var(--box-shadow);
+  color: #000;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  padding: 10px;
+  margin: 10px 0;
+}
+.list li.plus {
+  border-right: 5px solid lightblue;
+}
+.list li.minus {
+  border-right: 5px solid lightcoral;
+}
+.delete-btn {
+  cursor: pointer;
+  background-color: lightcoral;
+  border: 0;
+  color: #000;
+  font-size: 20px;
+  line-height: 20px;
+  padding: 2px 5px;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translate(-100%, -50%);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+.list li:hover .delete-btn {
+  opacity: 1;
+}
+.delete-btn:hover {
+  opacity: 1;
+}
+.delete-btn:focus {
+  outline: 0;
+}
+
+/* ADD Transaction.js */
+
+label {
+  display: inline-block;
+  margin: 10px 0;
+}
+input[type='text'],
+input[type='number'] {
+  border: 1px solid black;
+  border-radius: 2px;
+  display: block;
+  font-size: 16px;
+  padding: 10px;
+  width: 100%;
+}
+.btn {
+  cursor: pointer;
+  background-color: beige;
+  box-shadow: var(--box-shadow);
+  color: #000;
+  border: 0;
+  display: block;
+  font-size: 16px;
+  margin: 10px 0 30px;
+  padding: 10px;
+  width: 100%;
+}
+.btn:focus {
+  outline: 0;
+}
